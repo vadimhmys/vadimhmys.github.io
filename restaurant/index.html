@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant "Hungry people"</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/chosen.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__item">
+                    <ul class="menu__list-one">
+                        <li class="menu__list-item"><a href="#home" class="menu__list-link">HOME</a></li>
+                        <li class="menu__list-item"><a href="#about_us" class="menu__list-link">ABOUT</a></li>
+                        <li class="menu__list-item"><a href="#our_team" class="menu__list-link">TEAM</a></li>
+                        <li class="menu__list-item"><a href="#book_table" class="menu__list-link">BOOKING</a></li>
+                    </ul>
+                </div>
+                <div class="menu__item">
+                    <ul class="menu__list-two">
+                        <li class="menu__list-item"><a href="#delicious" class="menu__list-link">MENU</a></li>
+                        <li class="menu__list-item"><a href="#gallery" class="menu__list-link">GALERIE</a></li>
+                        <li class="menu__list-item"><a href="#private" class="menu__list-link">EVENTS</a></li>
+                        <li class="menu__list-item"><a href="#contact " class="menu__list-link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__wheel"></div>
+            <h1 class="header__title">hungry people</h1>
+            <div class="header__buttons">
+                <a href="#book_table" class="header__btn">BOOK TABLE</a>
+                <a href="#spetialties" class="header__btn">EXPLORE</a>
+            </div>
+            <a href="#" class="header__btn-down"><img src="images/icons/header__btn-down.svg" alt=""></a>
+            <div class="header__workinghours">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
+            <div class="header__social">
+                <a href="#" class="header__social-link"><img src="images/icons/facebook-icon.png" alt=""></a>
+                <a href="#" class="header__social-link"><img src="images/icons/twitter-icon.png" alt=""></a>
+                <a href="#" class="header__social-link"><img src="images/icons/instagram-icon.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about_us page-section" id="about_us">
+        <div class="container">
+            <div class="about_us__inner">
+                <div class="about_us__content">
+                    <h3 class="about_us__title title">about us</h3>
+                    <p class="about_us__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="about_us__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+                <div class="about_us__image"><img src="images/about-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our_team page-section" id="our_team">
+        <div class="container">
+            <div class="our_team__header">OUR TEAM</div>
+            <div class="our_team__inner">
+                <div class="our_team__image"><img src="images/our_team-img.jpg" alt="">
+                </div>
+                <div class="our_team__content">
+                    <h3 class="our_team__title title">MASTER CHEF</h3>
+                    <p class="our_team__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="our_team__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book_table page-section" id="book_table">
+        <div class="container">
+            <div class="book_table__inner">
+                <div class="book_table__content">
+                    <h3 class="book_table__title title">book a table</h3>
+                    <form class="book_table__form">
+                        <input type="text" class="book_table__form-name" placeholder="Name">
+                        <input type="email" class="book_table__form-email" placeholder="Email">
+                        <input type="telephone" class="book_table__form-phone" placeholder="Phone">
+                        <select name="book_table__select" class="book_table__form-select chosen-select">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5 and more persons</option>
+                        </select>
+                        <input type="text" class="book_table__form-date" id="datepicker" placeholder="Date (mm/dd)">
+                        <p class="book_table__time__p"><input class="book_table__form-time" type="text" placeholder="Time" id="basicExample"></p>
+                        <input type="submit" class="book_table__form-btn" value="BOOK NOW">
+                    </form>
+
+                </div>
+                <div class="book_table__image"><img src="images/book_table-img.jpg" alt="">
+                </div>
+            </div>
+            <div class="book_table__workinghours">Mon - Fri: <span>8PM - 10PM</span>, Sat - Sun: <span>8PM - 3AM</span>, Phone: <span>+40 729 131 637/+40 726 458 782</span></div>
+        </div>
+    </section>
+
+
+
+
+    <section class="spetialties page-section" id="spetialties">
+        <div class="container">
+            <div class="spetialties__header"> specialties</div>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <div class="spetialties__inner">
+                            <div class="spetialties__image"><img src="images/specialties-img.jpg" alt="">
+                            </div>
+                            <div class="spetialties__content">
+                                <h3 class="spetialties__title title">chocolate pancakes</h3>
+                                <p class="spetialties__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="spetialties__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="spetialties__inner">
+                            <div class="spetialties__image"><img src="images/dishes/losos.jpg" alt="">
+                            </div>
+                            <div class="spetialties__content">
+                                <h3 class="spetialties__title title">fried salmon</h3>
+                                <p class="spetialties__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="spetialties__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="spetialties__inner">
+                            <div class="spetialties__image"><img src="images/dishes/barbecue.jpg" alt="">
+                            </div>
+                            <div class="spetialties__content">
+                                <h3 class="spetialties__title title">the best barbecue</h3>
+                                <p class="spetialties__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="spetialties__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="spetialties__inner">
+                            <div class="spetialties__image"><img src="images/dishes/cupcakes.jpg" alt="">
+                            </div>
+                            <div class="spetialties__content">
+                                <h3 class="spetialties__title title">sweet muffins</h3>
+                                <p class="spetialties__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="spetialties__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="spetialties__inner">
+                            <div class="spetialties__image"><img src="images/dishes/wine.jpg" alt="">
+                            </div>
+                            <div class="spetialties__content">
+                                <h3 class="spetialties__title title">best french wine</h3>
+                                <p class="spetialties__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                                <p class="spetialties__text-bottom text-bottom">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="btn-prev">
+                <img src="images/icons/left-arrow.svg" alt="">
+            </button>
+            <button class="btn-next">
+                <img src="images/icons/right-arrow.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+    <section class="delicious page-section" id="delicious">
+        <div class="container">
+            <h3 class="delicious__title title">DELICIOUS MENU</h3>
+            <p class="delicious__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+            <div class="delicious__header"><a href="#" class="delicious__header-link soupe-link">SOUPE</a><a href="#" class="delicious__header-link pizza-link">PIZZA</a><a href="#" class="delicious__header-link pasta-link">PASTA</a><a href="#" class="delicious__header-link desert-link">DESERT</a><a href="#" class="delicious__header-link wine-link">WINE</a><a href="#" class="delicious__header-link beer-link">BEER</a><a href="#" class="delicious__header-link drinks-link">DRINKS</a>
+            </div>
+            <div class="delicious__menu soupe">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">SOUPE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu pizza">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PIZZA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu pasta">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu desert">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PDESERTQUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">PASTA QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DESERT QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu wine">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">WINE QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu beer">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">BEER QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="delicious__menu drinks">
+                <div class="delicious__menu-inner">
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="delicious__menu-item">
+                        <table class="delicious__menu-table">
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                            <tr class="delicious__menu-row">
+                                <td class="delicious__menu-name">DRINKS QUATRO STAGIONI . . .<br /><span>Integer ullamcorper neque eu purus euismod</span></td>
+                                <td class="delicious__menu-price">55,68 USD</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="private page-section" id="private">
+        <div class="container">
+            <div class="private__header">PRIVATE EVENTS</div>
+            <div class="private__inner">
+                <div class="private__image"><img src="images/private-left-img.jpg" alt="">
+                    <div class="events events-left">weddings</div>
+                </div>
+                <div class="private__image"><img src="images/private-right-img.jpg" alt="">
+                    <div class="events events-right">corporate pzrties</div>
+                </div>
+            </div>
+            <div class="private__contacts">For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the contact form.</div>
+        </div>
+    </section>
+
+    <div class="gallery" id="gallery">
+        <a href="images/gallery/event1.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
+            <img src="images/gallery/event1.jpg" />
+        </a>
+
+        <a href="images/gallery/event2.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
+            <img src="images/gallery/event2.jpg" />
+        </a>
+
+        <a href="images/gallery/event3.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
+            <img src="images/gallery/event3.jpg" />
+        </a>
+
+        <a href="images/gallery/event4.jpg" data-fancybox="preview" data-width="1500" data-height="1000">
+            <img src="images/gallery/event4.jpg" />
+        </a>
+    </div>
+
+    <section class="contact page-section" id="contact ">
+        <div class="container">
+            <h3 class="contact__title title">CONTACT</h3>
+            <p class="contact__text-top text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+            <form class="contact__form">
+                <div class="contact__form-top">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="telephone" placeholder="Phone">
+                </div>
+                <textarea class="contact__form-message" placeholder="Message"></textarea>
+                <div class="contact__form-bottom">
+                    <div class="contact__form-bottom-inner">
+                        <a href="#" class="contact__form-bottom-link"><i class="fa fa-map-marker" style="color:#E8C300"></i> 5th London Boulevard, U.K.</a>
+
+                        <div class="contact__phones">
+                            <a href="tel:+375291086014" class="contact__form-bottom-link"><i class="fa   fa-phone" style="transform: rotate(-90deg);color:#E8C300; "></i> 8(029)108-60-14</a>
+                        </div>
+                        <a href="" class="contact__form-bottom-link"><i class="fa fa-envelope" style="color: #E8C300"></i> office@mindblister.com</a>
+                    </div>
+                    <input type="submit" class="contact__form-btn" value="SEND MESSAGE">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__map" id="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2348.367417506104!2d27.685733295756382!3d53.94298147623218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x46dbc94aa0166d23%3A0x37e25a703cb81a62!2z0KPRgNGD0YfRjNC1LCDQnNC40L3RgdC6!3m2!1d53.945398999999995!2d27.687904999999997!4m3!3m2!1d53.9420722!2d27.6879!5e0!3m2!1sru!2sby!4v1592763604501!5m2!1sru!2sby" width="1350" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        <div class="footer__copy">© Copyright Mindblister 2019</div>
+    </footer>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
