@@ -1,0 +1,208 @@
+/*******ОБЩИЕ СТИЛИ********/
+@font-face{
+    font-family:'social';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix')
+        format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#social') format('svg');  
+}
+
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color:#000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    max-width: 1366px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color:#000;
+    background-color: #c4c4c4;
+}
+
+.container{
+    width: 83.2%;
+    margin: 0 auto; 
+}
+
+.section>div{
+    padding: 60px 0;
+    background: rgba(255,255,255,.65);
+}
+
+@media only all and (max-width:640px){
+    .section>div{
+        padding: 50px 0;
+    }
+}
+
+@media only all and (max-width:490px){
+    .section>div{
+        padding: 40px 0;
+    }
+}
+
+@media only all and (max-width:390px){
+    .section>div{
+        padding: 30px 0;
+    }
+}
+.section__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media only all and (max-width:768px){
+    .section__title{
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only all and (max-width:530px){
+    .section__title{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only all and (max-width:390px){
+    .section__title{
+        font-size: 23px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+}
+
+.btn{
+    width: 220px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    -webkit-box-shadow: inset 0px 4px 2px rgba(0,0,0,.3),0px 4px 2px rgba(0,0,0,.3);
+            box-shadow: inset 0px 4px 2px rgba(0,0,0,.3),0px 4px 2px rgba(0,0,0,.3);
+}
+
+.btn:active{
+    background-color: #000;
+    color:#fff;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.social{
+    width: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.social a{
+    font-family: 'social';
+}
+
+.social a:hover{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+}
+
+.social a:active{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.41)
+}
+
+.icon-facebook:before {
+  content: "\e903";
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  
+}
+.icon-instagram:before {
+  content: "\e902";
+  display:inline-block;
+  width: 19px;
+  height: 19px;
+  
+}
+.icon-vk:before {
+  content: "\e901";
+  display:inline-block;
+  width: 22px;
+  height: 22px;
+  
+}
+.icon-telegram:before {
+  content: "\e900";
+  display:inline-block;
+  width: 21px;
+  height: 18px;
+}
+
+.catalog__order{
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0 15px;
+    text-align: justify;
+}
+
+.catalog__order .social{
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 0;
+}
+
+.catalog__order .social a{
+    padding: 0 15px;
+}
+
+.catalog__order a[href^='tel']{
+    font-weight: 700;
+}
+
+.catalog__order a[href^='tel']:hover{
+    text-decoration: underline;
+}
+
+@media only all and (max-width:390px){
+    .catalog__order{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

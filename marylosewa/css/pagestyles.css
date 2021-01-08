@@ -1,0 +1,90 @@
+
+.section__pages a[href^='index.html']{
+    display: block;
+    float: left;
+    width: 42px;
+    height: 30px;
+    background: url(../images/icons/arrowBack.png) no-repeat;
+}
+
+.section__pages .cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.section__pages .cards__item{
+    border: 5px solid transparent;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 270px;
+            flex: 0 1 270px;
+    margin-bottom: 20px;
+}
+
+.section__pages .cards__item:hover{
+    border: 5px solid #000;
+}
+
+.section__pages .cards__item p{
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 7px;
+}
+
+.section__pages .cards__item p:first-of-type,
+.section__pages .cards__item p:last-of-type{
+    font-weight: 700;
+    margin-top: 8px;
+}
+.section__pages .cards__item p:last-of-type{
+    margin-bottom: 8px;
+}
+
+.section__pages .catalog__order{
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+@media only all and (max-width:1350px){
+    .section__pages .cards{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+}
+
+@media only all and (max-width:740px){
+    .section__pages .cards{
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+@media only all and (max-width:690px){
+    .section__pages .cards{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+@media only all and (max-width:390px){
+    .section__pages .cards__item{
+        margin-bottom: 10px;
+    }
+
+    .section__pages a[href^='index.html']{
+        display: block;
+        float: left;
+        width: 30px;
+        height: 23px;
+        background-size: cover;
+    }
+    .section__pages .catalog__order{
+        margin-top: 20px;
+    }
+}
